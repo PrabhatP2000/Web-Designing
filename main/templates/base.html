@@ -15,18 +15,17 @@
     <!--CSS -->
     <link rel="stylesheet" href="{%static 'css/styles.css'%}">
 
-    <!-- JavaScript -->
-    <script src="{% static 'js/main.js' %}"></script>
-
     <!-- Block for Tile -->
     <title>{% block title %}{% endblock %}</title>
 
-
-
 </head>
 <body>
+    <!-- Header -->
 {% block content %}
 
 {% endblock %}
+    <!-- footer -->
+    <!-- JavaScript -->
+    <script src="{% static 'js/main.js' %}"></script>
 </body>
 </html>
