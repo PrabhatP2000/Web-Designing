@@ -1,31 +1,72 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Favicon's -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
-    <link rel="manifest" href="{% static 'favicon/site.webmanifest' %}">
+  <!-- Favicon's -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon/apple-touch-icon.png' %}" />
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}" />
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}" />
+  <link rel="manifest" href="{% static 'favicon/site.webmanifest' %}" />
 
-    <!--CSS -->
-    <link rel="stylesheet" href="{%static 'css/styles.css'%}">
+  <!--CSS -->
+  <link rel="stylesheet" href="{%static 'css/styles.css'%}" />
 
-    <!-- Block for Tile -->
-    <title>{% block title %}{% endblock %}</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
+  <!-- CSS Block -->
+  {% block css %}
+
+  {% endblock%}
+
+
+
+  <!-- Block for Tile -->
+  <title>{% block title %}{% endblock %}</title>
 </head>
-<body>
-    <!-- Header -->
-{% block content %}
 
-{% endblock %}
+<body>
+  <!-- Header -->
+  <div class="container-fluid sticky-top">
+    <div class=" row border">
+      <div class="col-5">
+        <div class="row">
+          <div class="col-3"><a href="/">HOME</a></div>
+          <div class="col-3"><a href="/">HOME</a></div>
+          <div class="col-3"><a href="/">HOME</a></div>
+          <div class="col-3"><a href="/">HOME</a></div>
+        </div>
+      </div>
+      <div class="col-2">LOGO</div>
+      <div class="col-5">
+        <div class="row">
+          <div class="col-4">HOME</div>
+          <div class="col-4">HOME</div>
+          <div class="col-4">HOME</div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    {% block content %} {% endblock %}
     <!-- footer -->
+
+
     <!-- JavaScript -->
     <script src="{% static 'js/main.js' %}"></script>
+
+    <!-- JavaScript Block -->
+    {% block javascript %}
+
+    {% endblock %}
 </body>
+
 </html>

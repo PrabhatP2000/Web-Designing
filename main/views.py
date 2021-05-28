@@ -9,6 +9,9 @@ import math,random
 def index(request):
     return render(request, 'index.html')
 
+def login_signup(request):
+    return render(request,'login_signup.html')
+
 def email(request):
     digits = [i for i in range(0, 10)]
     random_str = ""
@@ -19,6 +22,6 @@ def email(request):
     subject = 'AVCOE Remastered OTP Verification'
     message = 'Thank You for Registering on AVCOE Remastered.\nYour OTP is ' + random_str + '\nUse this to Verify Your Account'
     email_from = settings.EMAIL_HOST_USER
-    recipient_list = ['Your Email Address']
+    recipient_list = ['mukundwagh2000@gmail.com',]
     send_mail( subject, message, email_from, recipient_list )
     return redirect('index')
