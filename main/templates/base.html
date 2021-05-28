@@ -59,9 +59,12 @@
 
     </div>
   </div>
-  <!-- Foooter -->
-   <!-- Footer -->
-   <footer class="site-footer m-0">
+  {% block content %}
+
+
+  {% endblock %}
+  <!-- Footer -->
+  <footer class="site-footer m-0">
     <div class="container-fluid container1 ml-md-1" id="mainfooterone">
       <div class="row p-0">
         <div class="container-fluid" style="user-select: auto;">
@@ -85,8 +88,8 @@
               </div>
               <div class="imgBox col-md-1 col-xs-6" style="user-select: auto;  padding: 1%; " id="mechdeptimage">
                 <center style="user-select: auto;"><a target="_blank" href="" style="user-select: auto;"><img
-                      class="img-responsive" src="{%static 'images/departmentimages/mechanical.png'%}"
-                      alt="mechanical" style="user-select: auto;"></a></center>
+                      class="img-responsive" src="{%static 'images/departmentimages/mechanical.png'%}" alt="mechanical"
+                      style="user-select: auto;"></a></center>
                 <br style="user-select: auto;">
                 <p class="font3" align="center" style="user-select: auto;">Mechanical</p>
               </div>
@@ -104,8 +107,7 @@
                 <br style="user-select: auto;">
                 <p class="font3" align="center" style="user-select: auto;">E&amp;TC</p>
               </div>
-              <div class="imgBox col-md-1 col-xs-6" style="user-select: auto;  padding: 1%; "
-                id="productiondeptimage">
+              <div class="imgBox col-md-1 col-xs-6" style="user-select: auto;  padding: 1%; " id="productiondeptimage">
                 <center style="user-select: auto;"><a target="_blank" href="" style="user-select: auto;"><img
                       class="img-responsive" src="{%static 'images/departmentimages/production.png'%}" alt="computer"
                       style="user-select: auto;"></a></center>
@@ -114,13 +116,12 @@
               </div>
               <div class="imgBox col-md-1 col-xs-6" style="user-select: auto;  padding: 1%;" id="electricaldeptimage">
                 <center style="user-select: auto;"><a target="_blank" href="" style="user-select: auto;"><img
-                      class="img-responsive" src="{%static 'images/departmentimages/electrical.png'%}"
-                      alt="electrical" style="user-select: auto;"></a></center>
+                      class="img-responsive" src="{%static 'images/departmentimages/electrical.png'%}" alt="electrical"
+                      style="user-select: auto;"></a></center>
                 <br style="user-select: auto;">
                 <p class="font3" align="center" style="user-select: auto;">Electrical</p>
               </div>
-              <div class="imgBox col-md-1 col-xs-6" style="user-select: auto;  padding: 1%;"
-                id="electronicsdeptimage">
+              <div class="imgBox col-md-1 col-xs-6" style="user-select: auto;  padding: 1%;" id="electronicsdeptimage">
                 <center style="user-select: auto;"><a target="_blank" href="" style="user-select: auto;"><img
                       class="img-responsive" src="{%static 'images/departmentimages/electronics.png'%}"
                       alt="electronics" style="user-select: auto;"></a></center>
@@ -251,15 +252,16 @@
             </p>
           </div>
           <div class="col-md-6 col-sm-6 text-right" style="user-select: auto; padding-top:1%; padding-left: 20% ;">
-            Designed by : <a id="hostteam" href="https://www.google.com" target="_blank"
-              style="user-select: auto;">Team Hosts@localhost</a>
+            Designed by : <a id="hostteam" href="https://www.google.com" target="_blank" style="user-select: auto;">Team
+              Hosts@localhost</a>
             <p style="user-select: auto;"></p>
           </div>
         </div> <!-- /.col-md-5 -->
       </div>
     </div>
-</div>
-</footer>
+    </div>
+  </footer>
+
   <!-- JavaScript -->
   <script src="{% static 'js/main.js' %}"></script>
 
