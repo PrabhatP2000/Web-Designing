@@ -1,251 +1,273 @@
+#avcoelogoname {
+    font-family: sans-serif;
+    padding-left: 9%;
+    padding-top: 2%;
+    font-weight: bold;
 
-#avcoelogoname{
-    font-family:sans-serif;
-   padding-left: 9%;
-   padding-top: 2%;
-   font-weight:bold;
-  
 }
-#avcoelogo{
+
+#avcoelogo {
     width: 40%;
     height: 38%;
 }
-#sociallogoname{
-    
+
+#sociallogoname {
+
     padding-left: 12%;
     padding-top: 4%;
     color: rgba(255, 255, 255, 0.712);
- }
-#lastfooter{
+}
+
+#lastfooter {
     background-color: rgb(8, 112, 248);
     color: rgba(245, 245, 245, 0.884);
 }
-#mainfooterthree{
+
+#mainfooterthree {
     background-color: rgb(42, 133, 252);
     color: white;
-   
+
 }
-#hostteam{
+
+#hostteam {
     color: rgba(255, 255, 255, 0.897);
 }
-#hostteam:hover{
-    color:black;
+
+#hostteam:hover {
+    color: black;
 }
-#socialmediabuttonone{
+
+#socialmediabuttonone {
     opacity: 0.7;
 
 }
-#socialmediabuttontwo{
+
+#socialmediabuttontwo {
     opacity: 0.7;
-    
-    }
-    #socialmediabuttonthree{
-        opacity: 0.7;
-        
-        }
-#socialmediabuttonone:hover{
-   opacity: 1;
- 
+
 }
-#socialmediabuttontwo:hover{
- 
+
+#socialmediabuttonthree {
+    opacity: 0.7;
+
+}
+
+#socialmediabuttonone:hover {
+    opacity: 1;
+
+}
+
+#socialmediabuttontwo:hover {
+
 
     opacity: 1;
 }
-#socialmediabuttonthree:hover{
+
+#socialmediabuttonthree:hover {
     opacity: 1;
 }
-.font3{
+
+.font3 {
     color: black;
     font-weight: bold;
 }
 
-@media screen and (min-width: 645px){
-    #civildeptimage{
+@media screen and (min-width: 645px) {
+    #civildeptimage {
         opacity: 0.8;
         transition: all;
         transition-duration: 0.6s;
         transition-timing-function: ease;
-        
+
     }
-      
-    #civildeptimage:hover{
-    width: 11%;
-    height: 40%;
-    border-style: groove;
-    border-width: 2%;
-    border-color: rgb(0, 0, 0);
-    border-radius: 5%;
-    background-color: rgb(192, 206, 233);
+
+    #civildeptimage:hover {
+        width: 11%;
+        height: 40%;
+        border-style: groove;
+        border-width: 2%;
+        border-color: rgb(0, 0, 0);
+        border-radius: 5%;
+        background-color: rgb(192, 206, 233);
     }
-    #computerdeptimage{
+
+    #computerdeptimage {
         opacity: 0.8;
         transition: all;
         transition-duration: 0.6s;
         transition-timing-function: ease;
-        
+
     }
-      
-    #computerdeptimage:hover{
-    width: 11%;
-    height: 40%;
-    border-style: groove;
-    border-width: 2%;
-    border-color: rgb(0, 0, 0);
-    border-radius: 5%;
-    background-color: rgb(192, 206, 233);
+
+    #computerdeptimage:hover {
+        width: 11%;
+        height: 40%;
+        border-style: groove;
+        border-width: 2%;
+        border-color: rgb(0, 0, 0);
+        border-radius: 5%;
+        background-color: rgb(192, 206, 233);
     }
-    #productiondeptimage{
+
+    #productiondeptimage {
         opacity: 0.8;
         transition: all;
         transition-duration: 0.6s;
         transition-timing-function: ease;
-        
+
     }
-      
-    #productiondeptimage:hover{
-    width: 11%;
-    height: 40%;
-    border-style: groove;
-    border-width: 2%;
-    border-color: rgb(0, 0, 0);
-    border-radius: 5%;
-    background-color: rgb(192, 206, 233);
+
+    #productiondeptimage:hover {
+        width: 11%;
+        height: 40%;
+        border-style: groove;
+        border-width: 2%;
+        border-color: rgb(0, 0, 0);
+        border-radius: 5%;
+        background-color: rgb(192, 206, 233);
     }
-    #electronicsdeptimage{
+
+    #electronicsdeptimage {
         opacity: 0.8;
         transition: all;
         transition-duration: 0.6s;
         transition-timing-function: ease;
-        
+
     }
-      
-    #electronicsdeptimage:hover{
-    width: 11%;
-    height: 40%;
-    border-style: groove;
-    border-width: 2%;
-    border-color: rgb(0, 0, 0);
-    border-radius: 5%;
-    background-color: rgb(192, 206, 233);
+
+    #electronicsdeptimage:hover {
+        width: 11%;
+        height: 40%;
+        border-style: groove;
+        border-width: 2%;
+        border-color: rgb(0, 0, 0);
+        border-radius: 5%;
+        background-color: rgb(192, 206, 233);
     }
-    #electricaldeptimage{
+
+    #electricaldeptimage {
         opacity: 0.8;
         transition: all;
         transition-duration: 0.6s;
         transition-timing-function: ease;
-        
+
     }
-      
-    #electricaldeptimage:hover{
-    width: 11%;
-    height: 40%;
-    border-style: groove;
-    border-width: 2%;
-    border-color: rgb(0, 0, 0);
-    border-radius: 5%;
-    background-color: rgb(192, 206, 233);
+
+    #electricaldeptimage:hover {
+        width: 11%;
+        height: 40%;
+        border-style: groove;
+        border-width: 2%;
+        border-color: rgb(0, 0, 0);
+        border-radius: 5%;
+        background-color: rgb(192, 206, 233);
     }
-    #entcdeptimage{
+
+    #entcdeptimage {
         opacity: 0.8;
         transition: all;
         transition-duration: 0.6s;
         transition-timing-function: ease;
-        
+
     }
-      
-    #entcdeptimage:hover{
-    width: 11%;
-    height: 40%;
-    border-style: groove;
-    border-width: 2%;
-    border-color: rgb(0, 0, 0);
-    border-radius: 5%;
-    background-color: rgb(192, 206, 233);
+
+    #entcdeptimage:hover {
+        width: 11%;
+        height: 40%;
+        border-style: groove;
+        border-width: 2%;
+        border-color: rgb(0, 0, 0);
+        border-radius: 5%;
+        background-color: rgb(192, 206, 233);
     }
-    #mechdeptimage{
+
+    #mechdeptimage {
         opacity: 0.8;
         transition: all;
         transition-duration: 0.6s;
         transition-timing-function: ease;
-        
+
     }
-      
-    #mechdeptimage:hover{
-    width: 11%;
-    height: 40%;
-    border-style: groove;
-    border-width: 2%;
-    border-color: rgb(0, 0, 0);
-    border-radius: 5%;
-    background-color: rgb(192, 206, 233);
+
+    #mechdeptimage:hover {
+        width: 11%;
+        height: 40%;
+        border-style: groove;
+        border-width: 2%;
+        border-color: rgb(0, 0, 0);
+        border-radius: 5%;
+        background-color: rgb(192, 206, 233);
     }
-    #itdeptimage{
+
+    #itdeptimage {
         opacity: 0.8;
         transition: all;
         transition-duration: 0.6s;
         transition-timing-function: ease;
-        
+
     }
-      
-    #itdeptimage:hover{
-    width: 11%;
-    height: 40%;
-    border-style: groove;
-    border-width: 2%;
-    border-color: rgb(0, 0, 0);
-    border-radius: 5%;
-    background-color: rgb(192, 206, 233);
+
+    #itdeptimage:hover {
+        width: 11%;
+        height: 40%;
+        border-style: groove;
+        border-width: 2%;
+        border-color: rgb(0, 0, 0);
+        border-radius: 5%;
+        background-color: rgb(192, 206, 233);
     }
-    #sciencedeptimage{
+
+    #sciencedeptimage {
         opacity: 0.8;
         transition: all;
         transition-duration: 0.6s;
         transition-timing-function: ease;
-        
+
     }
-      
-    #sciencedeptimage:hover{
-    width: 11%;
-    height: 40%;
-    border-style: groove;
-    border-width: 2%;
-    border-color: rgb(0, 0, 0);
-    border-radius: 5%;
-    background-color: rgb(192, 206, 233);
+
+    #sciencedeptimage:hover {
+        width: 11%;
+        height: 40%;
+        border-style: groove;
+        border-width: 2%;
+        border-color: rgb(0, 0, 0);
+        border-radius: 5%;
+        background-color: rgb(192, 206, 233);
     }
-    #mbadeptimage{
+
+    #mbadeptimage {
         opacity: 0.8;
         transition: all;
         transition-duration: 0.6s;
         transition-timing-function: ease;
-        
+
     }
-      
-    #mbadeptimage:hover{
-    width: 11%;
-    height: 40%;
-    border-style: groove;
-    border-width: 2%;
-    border-color: rgb(0, 0, 0);
-    border-radius: 5%;
-    background-color: rgb(192, 206, 233);
+
+    #mbadeptimage:hover {
+        width: 11%;
+        height: 40%;
+        border-style: groove;
+        border-width: 2%;
+        border-color: rgb(0, 0, 0);
+        border-radius: 5%;
+        background-color: rgb(192, 206, 233);
     }
-    #mbadeptimage{
+
+    #mbadeptimage {
         opacity: 0.8;
         transition: all;
         transition-duration: 0.6s;
         transition-timing-function: ease;
-        
+
     }
-      
-    #mbadeptimage:hover{
-    width: 11%;
-    height: 40%;
-    border-style: groove;
-    border-width: 2%;
-    border-color: rgb(0, 0, 0);
-    border-radius: 5%;
-    background-color: rgb(192, 206, 233);
+
+    #mbadeptimage:hover {
+        width: 11%;
+        height: 40%;
+        border-style: groove;
+        border-width: 2%;
+        border-color: rgb(0, 0, 0);
+        border-radius: 5%;
+        background-color: rgb(192, 206, 233);
     }
 }
