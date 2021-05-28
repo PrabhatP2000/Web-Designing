@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static %}
+<!-- CSS -->
+{% block css %}
+<link rel="stylesheet" href="{%static 'css/te_result.css'%}" />
+{% endblock%}
+
+<!-- Title block -->
+{% block title %}T.E Result{% endblock %}
+
+{% block content %}
+
+<div class="container" id="branch_header">
+    <h1>Please Select Your Branch</h1>
+</div>
+
+<div class="container">
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Sr. No</th>
+                <th scope="col">Branch Name</th>
+                <th scope="col">Result Date</th>
+                <th scope="col">Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Civil Engineering (2015 Pattern) - May 2021</td>
+                <td>15/06/2021</td>
+                <td><a class="btn btn-dark" href="/">Go for Result</a></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Computer Engineering (2015 Pattern) - May 2021</td>
+                <td>15/06/2021</td>
+                <td><a class="btn btn-dark" href="result">Go for Result</a></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Electronics Engineering (2015 Pattern) - May 2021</td>
+                <td>15/06/2021</td>
+                <td><a class="btn btn-dark" href="/">Go for Result</a></td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Mechanical Engineering (2015 Pattern) - May 2021</td>
+                <td>15/06/2021</td>
+                <td><a class="btn btn-dark" href="/">Go for Result</a></td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>E&TC Engineering (2015 Pattern) - May 2021</td>
+                <td>15/06/2021</td>
+                <td><a class="btn btn-dark" href="/">Go for Result</a></td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td>Information Technology (2015 Pattern) - May 2021</td>
+                <td>15/06/2021</td>
+                <td><a class="btn btn-dark" href="/">Go for Result</a></td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td>Electrical Engineering (2015 Pattern) - May 2021</td>
+                <td>15/06/2021</td>
+                <td><a class="btn btn-dark" href="/">Go for Result</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+
+
+
+{% endblock %}

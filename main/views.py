@@ -9,6 +9,12 @@ import math,random
 def index(request):
     return render(request, 'index.html')
 
+def te_result(request):
+    return render(request,'te_result.html')
+
+def result(request):
+    return render(request,'result.html')
+
 def login_signup(request):
     return render(request,'login_signup.html')
 

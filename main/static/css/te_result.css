@@ -1,0 +1,50 @@
+@keyframes heading_animation {
+    0% {
+        background: -webkit-linear-gradient(green, blue, orange);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    25% {
+        background: -webkit-linear-gradient(blue, green);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    50% {
+        background: -webkit-linear-gradient(green, blue, orange);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    75% {
+        background: -webkit-linear-gradient(green, blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    100% {
+        background: -webkit-linear-gradient(green, blue, orange);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+
+#branch_header {
+    margin: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: -webkit-linear-gradient(#0BA9F5, #308050);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#branch_header:hover {
+    animation-name: heading_animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    padding-top: 10px;
+    transition: all;
+    transition-duration: 1s;
+    border-bottom: 2px solid black;
+}
