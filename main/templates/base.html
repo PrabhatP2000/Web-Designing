@@ -40,11 +40,14 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-3 col-3 border p-lg-4 p-md-2 p-sm-4 p-2 hover"><a href="/">HOME</a>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-3 col-3 border p-lg-4 p-md-2 p-sm-4 p-2 hover"><a href="/">ACADEMICS</a>
+          <div class="col-lg-3 col-md-6 col-sm-3 col-3 border p-lg-4 p-md-2 p-sm-4 p-2 hover"><a data-bs-toggle="modal"
+              href="#academicModel">ACADEMICS</a>
           </div>
-          <div class="col-lg-3 col-md-7 col-sm-3 col-3 border p-lg-4 p-md-2 p-sm-4 p-2 hover"><a href="/">ADMISSIONS</a>
+          <div class="col-lg-3 col-md-7 col-sm-3 col-3 border p-lg-4 p-md-2 p-sm-4 p-2 hover"><a data-bs-toggle="modal"
+              href="#admissionModel">ADMISSIONS</a>
           </div>
-          <div class="col-lg-3 col-md-5 col-sm-3 col-3 border p-lg-4 p-md-2 p-sm-4 p-2 hover"><a href="/">GALLERY</a>
+          <div class="col-lg-3 col-md-5 col-sm-3 col-3 border p-lg-4 p-md-2 p-sm-4 p-2 hover"><a data-bs-toggle="modal"
+              href="#galleryModel">GALLERY</a>
           </div>
         </div>
       </div>
@@ -62,13 +65,163 @@
           href="{% url 'user_logout' %}">LOGOUT</a>
       </div>
       {%else %}
-      <div class="col-lg-2 col-md-2 col-sm-3 col-3 border p-lg-4 p-md-4 p-sm-4 p-2 hover"><a href="/">LOGIN</a>
+      <div class="col-lg-2 col-md-2 col-sm-3 col-3 border p-lg-4 p-md-4 p-sm-4 p-2 hover"><a ata-bs-toggle="modal"
+          href="#loginModel">LOGIN</a>
       </div>
       {% endif %}
 
 
     </div>
   </div>
+  <!-- Academic Model -->
+
+  <div class=" modal fade" id="academicModel" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: rgb(31, 112, 233); padding-left: 5%;">
+          <h2 class="modal-title" style="color: whitesmoke" id="exampleModalLabel1">DEPARTMENTS</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="background-color: rgba(235, 235, 235, 0.486);">
+          <a href="/" style="text-decoration: none;">
+            <h4>First year Engineering</h4>
+          </a>
+          <hr>
+          <a href="index.html" style="text-decoration: none;">
+            <h4>Computer Engineering</h4>
+          </a>
+          <hr>
+          <a href="/" style="text-decoration: none;">
+            <h4>Civil Engineering</h4>
+          </a>
+          <hr>
+          <a href="/" style="text-decoration: none;">
+            <h4>Mechanical Engineering</h4>
+          </a>
+          <hr>
+          <a href="/" style="text-decoration: none; ">
+            <h4>Production Engineering</h4>
+          </a>
+          <hr>
+          <a href="/" style="text-decoration: none;">
+            <h4>Electrical Engineering</h4>
+          </a>
+          <hr>
+          <a href="/" style="text-decoration: none;">
+            <h4>Electronics Engineering</h4>
+          </a>
+          <hr>
+          <a href="/" style="text-decoration: none;">
+            <h4>ENTC Engineering</h4>
+          </a>
+          <hr>
+          <a href="/" style="text-decoration: none;">
+            <h4>IT Engineering</h4>
+          </a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery Model -->
+
+  <div class="modal fade" id="galleryModel" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: rgb(31, 112, 233); padding-left: 5%;">
+          <h2 class="modal-title" style="color: whitesmoke" id="exampleModalLabel2">GALLERY</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="background-color: rgba(235, 235, 235, 0.336);">
+          <a href="/" style="text-decoration: none; ">
+            <h3>Photos</h3>
+          </a>
+          <hr>
+          <a href="/" style="text-decoration: none; ">
+            <h3>Videos</h3>
+          </a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Admission Model -->
+
+  <div class="modal fade" id="admissionModel" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: rgb(31, 112, 233); padding-left: 5%;">
+          <h2 class="modal-title" style="color: whitesmoke" id="exampleModalLabe3">ADMISSIONS</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="background-color: rgba(235, 235, 235, 0.486);">
+          <a href="/" style="text-decoration: none; ">
+            <h4>First Year (UG)</h4>
+          </a>
+          <hr>
+          <a href="/" style="text-decoration: none;">
+            <h4>ME Post Graduate</h4>
+          </a>
+          <hr>
+          <a href="/" style="text-decoration: none;">
+            <h4>MBA Post Graduate</h4>
+          </a>
+          <hr>
+          <a href="/" style="text-decoration: none;">
+            <h4>Ph.D</h4>
+          </a>
+          <hr>
+          <a href="/" style="text-decoration: none;">
+            <h4>Fee Structure</h4>
+          </a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Model -->
+
+  <div class="modal fade" id="loginModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </button>
+        </div>
+        <div class="modal-body p-6 py-1 p-md-5">
+          <h3 class="text-center mb-3">Login Window</h3>
+          <hr style="opacity:0.1 ">
+          <form action="#" class="signup-form">
+            <div class="form-group mb-3">
+              <input type="text" class="form-control" placeholder="ERP Number">
+            </div>
+            <div class="form-group mb-2">
+              <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <hr style="opacity:0.1 ">
+            <div class="form-group mb-2">
+              <button type="submit" class="form-control btn btn-primary rounded submit px-3">Login</button>
+            </div>
+            <div class="form-group mb-2">
+              <button class="form-control btn btn-primary rounded submit px-3">Forgot Password</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   {% block content %}
 
 
