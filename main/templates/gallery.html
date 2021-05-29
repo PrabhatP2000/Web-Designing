@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% load static %}
+<!-- Title block -->
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+
+<div class="row my-4">
+ <div class="col-sm-10">
+
+    <h2 class="my-3 text-center" style="font-family: Times New Roman, Times, serif;font-weight: bold;">           Gallery
+      </h2>
+ </div>
+</div>
+ <div class="row" data-aos="fade-up" data-aos-duration="6000">
+ <div class="col-sm-4">
+     <div class="card" >
+          <video class="video-fluid" autoplay loop muted style="width:440px;height:300px">
+          <source src="static/img/avcoe .mp4" type="video/mp4" />
+        </video>
+
+     </div>
+ </div>
+         <div class="col-sm-4">
+     <div class="card" >
+  <img src="{%static 'img/bb1.jpeg'%}" class="card-img-top" alt="..."style="width:440px;height:300px">
+     </div>
+         </div>
+ <div class="col-sm-4">
+     <div class="card" >
+          <video class="video-fluid" autoplay loop muted style="width:440px;height:300px">
+          <source src="static/img/avcoe .mp4" type="video/mp4" />
+        </video>
+
+     </div>
+ </div>
+ </div>
+<br>
+
+ <div class="row" data-aos="fade-up" data-aos-duration="6000">
+ <div class="col-sm-4">
+     <div class="card" >
+   <img src="{%static 'img/bb.jpeg'%}" class="card-img-top" alt="..." style="width:440px;height:300px"></div>
+ </div>
+         <div class="col-sm-4">
+     <div class="card" >
+  <video class="video-fluid" autoplay loop muted style="width:440px;height:300px">
+          <source src="static/img/avcoe .mp4" type="video/mp4" />
+        </video>
+     </div>
+         </div>
+ <div class="col-sm-4">
+     <div class="card" >
+  <img src="{%static 'img/a.jpg'%}" class="card-img-top" alt="..." style="width:440px;height:300px">
+
+     </div></div>
+ </div>
+     <br>
+     <div class="row" data-aos="fade-up" data-aos-duration="6000">
+ <div class="col-sm-4">
+     <div class="card" >
+  <img src="{%static 'img/a4.jpeg'%}" class="card-img-top" alt="..." style="width:440px;height:300px">
+     </div>
+ </div>
+         <div class="col-sm-4">
+     <div class="card" >
+  <img src="{%static 'img/bb1.jpeg'%}" class="card-img-top" alt="..." style="width:440px;height:300px">
+     </div>.
+         </div>
+ <div class="col-sm-4">
+     <div class="card" >
+  <img src="{%static 'img/kla.jpg'%}" class="card-img-top" alt="..." style="width:440px;height:300px">
+
+     </div></div>
+ </div></div>
+
+
+{% endblock %}
+
+

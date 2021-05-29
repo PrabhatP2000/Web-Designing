@@ -11,6 +11,20 @@ from .models import ResultProfile
 
 def index(request):
     return render(request, 'index.html')
+def contact(request):
+    return render(request, 'contact.html')
+
+
+
+
+
+
+
+
+def gallery(request):
+    return render(request,'gallery.html')
+
+
 
 def te_result(request):
     return render(request,'te_result.html')
