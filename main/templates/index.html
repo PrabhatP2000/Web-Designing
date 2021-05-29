@@ -4,5 +4,8 @@
 {% block title %}Welcome{% endblock %}
 
 {% block content %}
+{% if user.is_authenticated %}
+<p>Welcome, {{ user.get_short_name }}. Thanks for logging in.</p>
+{% endif %}
 
 {% endblock %}

@@ -1,9 +1,72 @@
 {% extends "base.html" %}
 {% load static %}
 <!-- Title block -->
-{% block title %}Welcome{% endblock %}
+{% block title %}Result{% endblock %}
+
+<!-- CSS -->
+{% block css %}
+<link rel="stylesheet" href="{%static 'css/te_result.css'%}" />
+{% endblock%}
 
 {% block content %}
-<h1>Your Result</h1>
+<div class="container" id="branch_header">
+    <h1>Result</h1>
+</div>
+{% for data in result_profile %}
+<div class="container">
+    <h3>Name : {{ user.get_full_name }}</h3>
+    <h3>BRANCH : {{ data.BRANCH}}</h3>
+    <h3>ROLL NO. : {{ data.ROLL_NO}}</h3>
+    <h3>SEM : {{ data.SEM}}</h3>
+    <h3>ERP NO. : {{ user.username}}</h3>
+
+    <table class="table table-dark w-75">
+        <thead>
+            <tr>
+                <th scope="col">SR. NO.</th>
+                <th scope="col">SUBJECT</th>
+                <th scope="col">MARKS OUT OF 100</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>{{ data.SUBJECT_NAME1}}</td>
+                <td>{{ data.MARK1}}</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>{{ data.SUBJECT_NAME2}}</td>
+                <td>{{ data.MARK2}}</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>{{ data.SUBJECT_NAME3}}</td>
+                <td>{{ data.MARK3}}</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>{{ data.SUBJECT_NAME4}}</td>
+                <td>{{ data.MARK4}}</td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>{{ data.SUBJECT_NAME5}}</td>
+                <td>{{ data.MARK5}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+
+
+
+
+{% endfor %}
+
 
 {% endblock %}
