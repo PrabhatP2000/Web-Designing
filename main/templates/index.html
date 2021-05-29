@@ -24,53 +24,23 @@
   <h1>Welcome {{ user.get_short_name }}</h1>
 </div>
 {% endif %}
-
-<div class="container-fluid my-4 px-0">
-  <div id="carouselExampleCaptions" class="carousel slide width-50%" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
+<!-- Main Image -->
+ <div class="container-fluid col-sm-11 m-sm-auto">
+  
+   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+     <div class="carousel-inner">
+       <div class="carousel-item active">
+         <img src="{%static 'img/bbb1.jpeg'%}" class="d-block w-100" alt="...">
+         <div class="carousel-caption d-none d-md-block">
+           <h5>AVCOE Campus</h5>
+           <p>Change Your Life..Start Here..!.</p>
+         </div>
+       </div> 
+     </div>
+  
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="/static/img/bb.jpeg" class="d-block w-100" alt="..." style="width:640px;height:460px">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Welcome</h5>
-          <p>In Amrutvahini Collge of engineering</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="/static/img/bb1.jpeg" class="d-block w-100" alt="..." style="width:640px;height:460px">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Best College Award</h5>
-          <p>In 2020-2021</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="/static/img/bb3.jpeg" class="d-block w-100" alt="..." style="width:640px;height:460px">
-        <div class="carousel-caption d-none d-md-block">
-          <b class="primary">
-            <h5>Make Future bright</h5>
-            <p>When admission In Amrutvahini.....</p>
-          </b>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 </div>
-
+<!-- Main Image  End-->
 <div class="container" data-aos="fade-up" data-aos-duration="6000">
   <div class="row">
 
