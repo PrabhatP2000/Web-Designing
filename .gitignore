@@ -2,6 +2,7 @@
 *.pot
 *.pyc
 __pycache__
+.idea/
 db.sqlite3
 main/__pycache__/
 webdev/__pycache__/
