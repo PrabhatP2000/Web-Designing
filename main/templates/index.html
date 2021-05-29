@@ -3,9 +3,26 @@
 <!-- Title block -->
 {% block title %}Welcome{% endblock %}
 
+{% block css %}
+<link rel="stylesheet" href="{%static 'css/te_result.css'%}" />
+{% endblock%}
+
 {% block content %}
+
+{%for message in messages%}
+<div class="alert alert-{{message.tags}} alert-dismissible fade show m-2" role="alert">
+  <strong>Message : </strong>{{message}}
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+{% endfor %}
+
+
 {% if user.is_authenticated %}
-<p>Welcome, {{ user.get_short_name }}. Thanks for logging in.</p>
+<div class="container m-2" id="branch_header">
+  <h1>Welcome {{ user.get_short_name }}</h1>
+</div>
 {% endif %}
 
 <div class="container-fluid my-4 px-0">

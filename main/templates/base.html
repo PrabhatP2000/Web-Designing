@@ -56,7 +56,8 @@
           <img src="{% static 'images/avcoe.png' %}" alt="logo">AVCOE
         </a>
       </div>
-      <div class="col-lg-1 col-md-2 col-sm-2 col-2 border p-lg-4 p-md-4 p-sm-4 p-2 hover"><a href="/">RESULTS</a>
+      <div class="col-lg-1 col-md-2 col-sm-2 col-2 border p-lg-4 p-md-4 p-sm-4 p-2 hover"><a data-bs-toggle="modal"
+          href="#ResultModal">RESULTS</a>
       </div>
       <div class="col-lg-2 col-md-2 col-sm-3 col-3 border p-lg-4 p-md-4 p-sm-4 p-2 hover"><a href="/">CONTACT</a>
       </div>
@@ -151,6 +152,41 @@
     </div>
   </div>
 
+  <!-- REULT MODAL -->
+
+  <div class="modal fade" id="ResultModal" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: rgb(31, 112, 233); padding-left: 5%;">
+          <h2 class="modal-title" style="color: whitesmoke" id="exampleModalLabel2">RESULTS</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="background-color: rgba(235, 235, 235, 0.336);">
+          <a href="#" style="text-decoration: none; ">
+            <h3>F.E</h3>
+          </a>
+          <hr>
+          <a href="#" style="text-decoration: none; ">
+            <h3>S.E</h3>
+          </a>
+          <hr>
+          <a href="/te_result" style="text-decoration: none; ">
+            <h3>T.E</h3>
+          </a>
+          <hr>
+          <a href="#" style="text-decoration: none; ">
+            <h3>B.E</h3>
+          </a>
+          <hr>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <!-- Admission Model -->
 
   <div class="modal fade" id="admissionModel" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
@@ -201,20 +237,22 @@
         <div class="modal-body p-6 py-1 p-md-5">
           <h3 class="text-center mb-3">Login Window</h3>
           <hr style="opacity:0.1 ">
-          <form action="#" class="signup-form">
+          <form action="/login" method="post" class="signup-form">
+            {% csrf_token %}
             <div class="form-group mb-3">
-              <input type="text" class="form-control" name="erp" placeholder="ERP Number">
+              <input type="text" class="form-control" name="erp" required placeholder="ERP Number">
             </div>
             <div class="form-group mb-2">
-              <input type="password" name="password" class="form-control" placeholder="Password">
+              <input type="password" name="password" required class="form-control" placeholder="Password">
             </div>
             <hr style="opacity:0.1 ">
             <div class="form-group mb-2">
               <button type="submit" class="form-control btn btn-primary rounded submit px-3">Login</button>
             </div>
-            <div class="form-group mb-2">
-              <button class="form-control btn btn-primary rounded submit px-3">Forgot Password</button>
+            <div style="text-align:center;">
+              <a class="btn btn-primary px-3" href="/">Forgot Password</a>
             </div>
+
           </form>
         </div>
       </div>
@@ -451,6 +489,15 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
 
 
