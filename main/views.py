@@ -18,7 +18,8 @@ def te_result(request):
 
 def result(request):
     if request.user.is_authenticated:
-        result_profile = ResultProfile.objects.all()
+        username=request.user.username
+        result_profile = ResultProfile.objects.filter(ERP=username)
         result_data={"result_profile":result_profile}
         return render(request,'result.html',result_data)
     else:

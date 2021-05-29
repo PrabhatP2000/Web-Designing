@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 class ResultProfile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    ERP = models.IntegerField()
     SEM = models.IntegerField()
     SUBJECT_NAME1 = models.CharField(max_length=100)
     SUBJECT_NAME2 = models.CharField(max_length=100)
@@ -20,4 +20,4 @@ class ResultProfile(models.Model):
     ROLL_NO = models.CharField(max_length=10)
 
     def __str__(self):
-        return self.user.username
+        return self.ROLL_NO
