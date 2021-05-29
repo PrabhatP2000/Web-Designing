@@ -6,19 +6,31 @@ from webdev import settings
 from django.contrib.auth import logout,login,authenticate
 from django.contrib import messages
 from .models import ResultProfile
+from .models import AdmissionEnquiry
 
 # Create your views here.
 
 def index(request):
     return render(request, 'index.html')
+
+
 def contact(request):
-    return render(request, 'contact.html')
+    return render(request,'contact.html')
 
-
-
-
-
-
+def admission_form(request):
+    if request.method == 'POST':
+        name = request.POST['name']
+        email = request.POST['email']
+        subject = request.POST['subject']
+        message = request.POST['message']
+        admission_enquiry =AdmissionEnquiry(NAME=name,EMAIL=email,SUBJECT=subject,MESSAGE=message)
+        admission_enquiry.save()
+        messages.success(request, " Form Successfully Sent")
+        return render(request, 'contact.html')
+        
+    else:
+        return render(request, '404.html')
+        
 
 
 def gallery(request):

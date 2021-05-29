@@ -1,3 +1,10 @@
+body {
+    background: #FFEFBA;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+}
+
+
 #nav {
     background-color: #0BA9F5;
 }

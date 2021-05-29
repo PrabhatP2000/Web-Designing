@@ -4,91 +4,100 @@
 {% block title %}Welcome{% endblock %}
 
 {% block content %}
+{%for message in messages%}
+<div class="alert alert-{{message.tags}} alert-dismissible fade show m-2" role="alert">
+    <strong>Message : </strong>{{message}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+{% endfor %}
 <br>
-      <div class="row">
-          <div class="col-md-2"></div>
+<div class="row">
+    <div class="col-md-2"></div>
 
-  <div class="col-md-8">
+    <div class="col-md-8">
 
-<ul class="nav nav-pills flex-column ">
-  <li class="nav-item">
-    <h2 class="nav-link active">Admission Enquiry</h2>
-  </li>
-  <li class="nav-item">
-<section >
-<section class="mb-4">
-   <section>
-<div class="container">
-	<form class="form">
-        <div class="row"><div class="col">
+        <ul class="nav nav-pills flex-column ">
+            <li class="nav-item">
+                <h2 class="nav-link active">Admission Enquiry</h2>
+            </li>
+            <li class="nav-item">
+                <section>
+                    <section class="mb-4">
+                        <section>
+                            <div class="container">
+                                <form method="post" action='/admission_form' class="form">
+                                    {% csrf_token %}
+                                    <div class="row">
+                                        <div class="col">
 
-		<div class="row">
-			<div class="col-md-9">
+                                            <div class="row">
+                                                <div class="col-md-9">
 
- <label for="name">Your Name</label>
-                            <input type="text" name="name"class="box form-control">
-                        </div>
-        </div>
-            <div class="row">
-                            <div class="col-md-9">
+                                                    <label for="name">Your Name</label>
+                                                    <input required type="text" name="name" class="box form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-9">
 
-                        		<label for="email">Your Email</label>
+                                                    <label for="email">Your Email</label>
 
-		<input type="email" name="email" class="box form-control">
-	</div>
-                         </div>
+                                                    <input required type="email" name="email" class="box form-control">
+                                                </div>
+                                            </div>
 
-                        <div class="row">
-                    <div class="col-md-9">
-                        <label for="subject">Subject</label>
-                            <input type="text" name="subject" class="box form-control">
-
-
-                    </div>
-                        </div>
-            <div class="row">
-                    <div class="col-md-9">
-                        <label for="department">Department</label>
-                            <input type="text" name="subject" class="box form-control">
+                                            <div class="row">
+                                                <div class="col-md-9">
+                                                    <label for="subject">Subject</label>
+                                                    <input required type="text" name="subject" class="box form-control">
 
 
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-9">
-                         <label for="message">Your Message</label><br>
-                            <textarea type="text" name="message" rows="3" class="form-contr0l md-textarea"> </textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-9">
+                                                    <label for="message">Your Message</label><br>
+                                                    <textarea required type="text" name="message" rows="3"
+                                                        class="form-contr0l md-textarea"> </textarea>
 
 
-                    </div>
-                </div>
-                <div class="text-center text-md-left">
-                     <button class="btn btn-primary" type="submit">Send</button>
-                </div>
+                                                </div>
+                                            </div>
+                                            <div class="text-center text-md-left">
+                                                <button class="btn btn-primary" type="submit">Send</button>
+                                            </div>
 
 
 
-</div><div class="col"><center>
-	<div class="text-primary">
-	<ul class="list-unstyled mb-0">
-                <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                <p class="text-dark">Sangemner, 422608</p> </li>
-                <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                <p class="text-dark">+ 123456789</p> </li>
-                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                <p class="text-dark">avcoe.org.gmail.com</p> </li>
-            </ul>
-        </div>
-    </center>
-        </div>
-        </div>
-    </form>
+                                        </div>
+                                        <div class="col">
+                                            <center>
+                                                <div class="text-primary">
+                                                    <ul class="list-unstyled mb-0">
+                                                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                                                            <p class="text-dark">Sangamner, 422608</p>
+                                                        </li>
+                                                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                                                            <p class="text-dark">(02425) 259015/16/17/18</p>
+                                                        </li>
+                                                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                                                            <p class="text-dark">avcoe.org@gmail.com</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </center>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </section>
+                    </section>
+    </div>
+
 </div>
 
-</section>
-</section>
-  </div>
-
-      </div>
-
-    {% endblock %}
+{% endblock %}
