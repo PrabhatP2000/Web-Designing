@@ -11,234 +11,257 @@
 
 {%for message in messages%}
 <div class="alert alert-{{message.tags}} alert-dismissible fade show m-2" role="alert">
-  <strong>Message : </strong>{{message}}
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
+	<strong>Message : </strong>{{message}}
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	</button>
 </div>
 {% endfor %}
 
 
 {% if user.is_authenticated %}
 <div class="container m-2" id="branch_header">
-  <h1>Welcome {{ user.get_short_name }}</h1>
+	<h1>Welcome {{ user.get_short_name }}</h1>
 </div>
 {% endif %}
 <!-- Main Image -->
 <div class="container-fluid col-sm-11 m-sm-auto">
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="{%static 'img/bbb1.jpeg'%}" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h3>AVCOE Campus</h3>
-          <p>Change Your Life..Start Here..!.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+	<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="{%static 'img/bbb1.jpeg'%}" class="d-block w-100" alt="...">
+				<div class="carousel-caption d-none d-md-block">
+					<h3>AVCOE Campus</h3>
+					<p>Change Your Life..Start Here..!.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 <!-- Welcome Container -->
 <div class="container-fluid">
 	<div class="container">
-	  <div class="row" id="welcomeamrut">
-		<div class="col-12 m-3">
-		  <h1 align="center" style="color: white;">
-			Welcome to Amrutvahini
-		  </h1>
-		  <h3 align="center" style="padding-right: 1%; color: rgb(230, 225, 225);">
-			Amrutvahini College of Engineering (AVCOE), Sangamner established in 1983 under the leadership of Hon. Late. Bhausaheb Thorat and progessing under the guidance of Hon. Shri. Balasaheb Thorat, Revenue Minister,Government of Maharashtra and Hon. Dr.Sudhir Tambe (MLC Nashik). It is spread over 15.6 acres of ample greenery, with three times accreditation by NBA, New Delhi, Graded 'A' by NACC Government of India and International Academic Accreditation lSO 9001:2015 by TUV SUD. It boasts state of art IT centre with 100 mbps Wi-Fi Internet Facility. It has a huge library that accommodates 66,735 books,129 print journals and 275 e-journals.
-			It provides 100% placement assistance to its students through value added courses,foreign langauges (Japanese , German) and Training. It is an Institute that has always worked for imparting excellence driven engineering education that builds the future of Engineers and Entrepreneurs.
-		  </h3>
-		</div>
-	  </div>
-	  </div>
-	  </div>
-	  <hr>
-	  <!-- Vision Container -->
-	  <div class="container-fluid">
-		<div class="container">
-		  <div class="row" id="visionrow">
+		<div class="row" id="welcomeamrut">
 			<div class="col-12 m-3">
-			  <h1 align="center" style="color:white;">
-				VISION
-			  </h1>
-			  <h3 align="center" style="color: rgb(231, 227, 227);">        
-				To create opportunities for rural students to become able engineers and technocrats through continual excellence in engineering education.
-			  </h3>
+				<h1 align="center" style="color: white;">
+					Welcome to Amrutvahini
+				</h1>
+				<h3 align="center" style="padding-right: 1%; color: rgb(230, 225, 225);">
+					Amrutvahini College of Engineering (AVCOE), Sangamner established in 1983 under the leadership of
+					Hon. Late. Bhausaheb Thorat and progessing under the guidance of Hon. Shri. Balasaheb Thorat,
+					Revenue Minister,Government of Maharashtra and Hon. Dr.Sudhir Tambe (MLC Nashik). It is spread over
+					15.6 acres of ample greenery, with three times accreditation by NBA, New Delhi, Graded 'A' by NACC
+					Government of India and International Academic Accreditation lSO 9001:2015 by TUV SUD. It boasts
+					state of art IT centre with 100 mbps Wi-Fi Internet Facility. It has a huge library that
+					accommodates 66,735 books,129 print journals and 275 e-journals.
+					It provides 100% placement assistance to its students through value added courses,foreign langauges
+					(Japanese , German) and Training. It is an Institute that has always worked for imparting excellence
+					driven engineering education that builds the future of Engineers and Entrepreneurs.
+				</h3>
 			</div>
-		  </div>
-		  </div>
-		  </div>
-		  <hr>
+		</div>
+	</div>
+</div>
+<hr>
+<!-- Vision Container -->
+<div class="container-fluid">
+	<div class="container">
+		<div class="row" id="visionrow">
+			<div class="col-12 m-3">
+				<h1 align="center" style="color:white;">
+					VISION
+				</h1>
+				<h3 align="center" style="color: rgb(231, 227, 227);">
+					To create opportunities for rural students to become able engineers and technocrats through
+					continual excellence in engineering education.
+				</h3>
+			</div>
+		</div>
+	</div>
+</div>
+<hr>
 <!-- EVENTS HTML -->
 <div class="container-fluid">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 m-3">
-        <h1 align="center">
-          AVCOE Events
-        </h1>
-        <h3 align="center">
-          What’s happening on campus
-        </h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12 m-3">
-        <div class="card-deck">
-          <div class="card">
-            <img class="card-img-top" src="{%static 'images/events/event1.jpg'%}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">15 Days Faculty Development Program on "Entrepreneurship, Innovation and Incubation
-              </h5>
-              <p class="card-text">Amrutvahini College of Engineering.</p>
-              <p class="card-text"><small class="text-muted">May 17 to 31</small></p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-img-top" src="{%static 'images/events/event2.png'%}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Online session on Competative examination: Keys to success.</h5>
-              <p class="card-text">Amrutvahini College of Engineering</p>
-              <p class="card-text"><small class="text-muted">June 20</small></p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-img-top" src="{%static 'images/events/event3.png'%}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Internet Of Things</h5>
-              <p class="card-text">Amrutvahini College of Engineering</p>
-              <p class="card-text"><small class="text-muted">August 25</small></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <h1 align="center">
-          <a class="btn btn-primary" href="#">More Events</a>
-        </h1>
-      </div>
-    </div>
-  </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-12 m-3">
+				<h1 align="center">
+					AVCOE Events
+				</h1>
+				<h3 align="center">
+					What’s happening on campus
+				</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 m-3">
+				<div class="card-deck">
+					<div class="card">
+						<img class="card-img-top" src="{%static 'images/events/event1.jpg'%}" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">15 Days Faculty Development Program on "Entrepreneurship, Innovation
+								and Incubation
+							</h5>
+							<p class="card-text">Amrutvahini College of Engineering.</p>
+							<p class="card-text"><small class="text-muted">May 17 to 31</small></p>
+						</div>
+					</div>
+					<div class="card">
+						<img class="card-img-top" src="{%static 'images/events/event2.png'%}" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Online session on Competative examination: Keys to success.</h5>
+							<p class="card-text">Amrutvahini College of Engineering</p>
+							<p class="card-text"><small class="text-muted">June 20</small></p>
+						</div>
+					</div>
+					<div class="card">
+						<img class="card-img-top" src="{%static 'images/events/event3.png'%}" alt="Card image cap">
+						<div class="card-body">
+							<h5 class="card-title">Internet Of Things</h5>
+							<p class="card-text">Amrutvahini College of Engineering</p>
+							<p class="card-text"><small class="text-muted">August 25</small></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<h1 align="center">
+					<a class="btn btn-primary" href="#">More Events</a>
+				</h1>
+			</div>
+		</div>
+	</div>
 </div>
 <!-- EVENTS END -->
 
 <div class="row">
 
-  <div class="jumbotron ">
+	<div class="jumbotron ">
 		<div class="container">
 			<h1 class="text-center text-primary weight-bold">Amrutvahini Today</h1>
 			<h4 class="text-center text-primary weight-bold">The latest stories from Amrutvahini!</h4>
 			<br>
 			<div class="row">
 				<div class="col-lg-3 col-sm-2">
-					<div class="card shadow-lg mb-2 img-hover-zoom" >
+					<div class="card shadow-lg mb-2 img-hover-zoom">
 						<div class="card-body text-center">
 							<a href="#" class="img-wrapper" tabindex="-1" aria-hidden="true">
-								<img src="{%static 'img/a13.jfif'%}" class="img-fluid " alt="avt1" alt="" role="presentation" style="width:440px;height:200px">
+								<img src="{%static 'img/a13.jfif'%}" class="img-fluid " alt="avt1" alt=""
+									role="presentation" style="width:440px;height:200px">
 							</a>
 							<div class="date" itemprop="startDate" content="2021-06-02T17:00:00Z">
-      <span class="month">Jun</span>
-      <span class="day">2</span>
-    </div>
-							<h4 class="card-title" >Seminar</h4>
+								<span class="month">Jun</span>
+								<span class="day">2</span>
+							</div>
+							<h4 class="card-title">Seminar</h4>
 							<p class="card-text">Personal Development organised by IT D</p>
+						</div>
 					</div>
 				</div>
-		</div>
-		<div class="col-lg-3 col-sm-2">
-					<div class="card shadow-lg mb-2 img-hover-zoom" >
+				<div class="col-lg-3 col-sm-2">
+					<div class="card shadow-lg mb-2 img-hover-zoom">
 						<div class="card-body text-center">
 							<a href="#" class="img-wrapper" tabindex="-1" aria-hidden="true">
-								<img src="{%static 'img/a14.jfif'%}" class="img-fluid " alt="avt1" alt="" role="presentation" style="width:500px;height:200px">
+								<img src="{%static 'img/a14.jfif'%}" class="img-fluid " alt="avt1" alt=""
+									role="presentation" style="width:500px;height:200px">
 							</a>
 							<div class="date" itemprop="startDate" content="2021-06-02T17:00:00Z">
-      <span class="month">Feb</span>
-      <span class="day">24</span>
-    </div>
-							<h4 class="card-title" >Solar Workshop</h4>
+								<span class="month">Feb</span>
+								<span class="day">24</span>
+							</div>
+							<h4 class="card-title">Solar Workshop</h4>
 							<p class="card-text">Department of Computer Engineering organised </p>
+						</div>
 					</div>
 				</div>
-		</div>
 
-  <div class="col-lg-6 col-sm-6">
+				<div class="col-lg-6 col-sm-6">
 					<div class="card shadow-lg mb-2 img-hover-zoom" style="width:580px;height:400px">
 						<div class="card-body text-center">
 							<a href="#" class="img-wrapper" tabindex="-1" aria-hidden="true">
-								<img src="{%static 'img/a11.jpeg'%}" class="img-fluid " alt="avt1" alt="" role="presentation" style="width:640px;height:370px">
+								<img src="{%static 'img/a11.jpeg'%}" class="img-fluid " alt="avt1" alt=""
+									role="presentation" style="width:640px;height:370px">
 							</a>
-							 <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
-    <h5 class="card-title text-light weight-bold text-justify">University Update</h5>
-  <h4 class="card-text text-light text-justify weight-bold">Amrutvahini Conduct Codethon</h4>
+							<div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
+								<h5 class="card-title text-light weight-bold text-justify">University Update</h5>
+								<h4 class="card-text text-light text-justify weight-bold">Amrutvahini Conduct Codethon
+								</h4>
 
-  </div>
-					</div>
-				</div>
-		</div>
-	</div>
-<div class="row">
-				<div class="col-lg-6 col-sm-8">
-					<div class="card shadow-lg mb-2 img-hover-zoom"  style="width:580px;height:400px">
-						<div class="card-body text-center" >
-							<a href="#" class="img-wrapper" tabindex="-1" aria-hidden="true">
-								<img src="{%static 'img/a12.jpg'%}" class="img-fluid " alt="avt1" alt="" role="presentation"style="width:640px;height:370px">
-							</a>
-							 <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
-    <h5 class="card-title text-light weight-bold text-justify">University Update</h5>
-  <h4 class="card-text text-light text-justify weight-bold">Admission Started for 2021-22</h4>
-
-  </div>
-					</div>
-				</div>
-		</div>
-		<div class="col-lg-3 col-sm-2">
-					<div class="card shadow-lg mb-2 img-hover-zoom" >
-						<div class="card-body text-center">
-							<a href="#" class="img-wrapper" tabindex="-1" aria-hidden="true">
-								<img src="{%static 'img/a15.jpg'%}" class="img-fluid " alt="avt1" alt="" role="presentation" style="width:500px;height:200px">
-							</a>
-							<div class="date" itemprop="startDate" content="2021-06-02T17:00:00Z">
-      <span class="month">Sept</span>
-      <span class="day">24</span>
-    </div>
-							<h4 class="card-title" >Freshers Meet</h4>
-							<p class="card-text">Department of Computer Engineering organised </p>
-					</div>
-				</div>
-		</div>
-
-  <div class="col-lg-3 col-sm-2">
-					<div class="card shadow-lg mb-2 img-hover-zoom" >
-						<div class="card-body text-center">
-							<a href="#" class="img-wrapper" tabindex="-1" aria-hidden="true">
-								<img src="{%static 'img/a16.jpg'%}" class="img-fluid " alt="avt1" alt="" role="presentation" style="width:440px;height:200px">
-							</a>
-							<div class="date" itemprop="startDate" content="2021-06-02T17:00:00Z">
-      <span class="month">Feb</span>
-      <span class="day">2</span>
-    </div>
-							<h4 class="card-title" >Guest Lecture</h4>
-							<p class="card-text">Department of Computer Engineering organised </p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-lg-6 col-sm-8">
+					<div class="card shadow-lg mb-2 img-hover-zoom" style="width:580px;height:400px">
+						<div class="card-body text-center">
+							<a href="#" class="img-wrapper" tabindex="-1" aria-hidden="true">
+								<img src="{%static 'img/a12.JPG'%}" class="img-fluid " alt="avt1" alt=""
+									role="presentation" style="width:640px;height:370px">
+							</a>
+							<div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
+								<h5 class="card-title text-light weight-bold text-justify">University Update</h5>
+								<h4 class="card-text text-light text-justify weight-bold">Admission Started for 2021-22
+								</h4>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-2">
+					<div class="card shadow-lg mb-2 img-hover-zoom">
+						<div class="card-body text-center">
+							<a href="#" class="img-wrapper" tabindex="-1" aria-hidden="true">
+								<img src="{%static 'img/a15.jpg'%}" class="img-fluid " alt="avt1" alt=""
+									role="presentation" style="width:500px;height:200px">
+							</a>
+							<div class="date" itemprop="startDate" content="2021-06-02T17:00:00Z">
+								<span class="month">Sept</span>
+								<span class="day">24</span>
+							</div>
+							<h4 class="card-title">Freshers Meet</h4>
+							<p class="card-text">Department of Computer Engineering organised </p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-sm-2">
+					<div class="card shadow-lg mb-2 img-hover-zoom">
+						<div class="card-body text-center">
+							<a href="#" class="img-wrapper" tabindex="-1" aria-hidden="true">
+								<img src="{%static 'img/a16.jpg'%}" class="img-fluid " alt="avt1" alt=""
+									role="presentation" style="width:440px;height:200px">
+							</a>
+							<div class="date" itemprop="startDate" content="2021-06-02T17:00:00Z">
+								<span class="month">Feb</span>
+								<span class="day">2</span>
+							</div>
+							<h4 class="card-title">Guest Lecture</h4>
+							<p class="card-text">Department of Computer Engineering organised </p>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-5">
+			</div>
+			<div class="text-center text-md-left">
+				<center>
+					<button type="button" class="btn btn-primary btn-lg">See All News</button></center>
+			</div>
 
+		</div>
 	</div>
-	  <br>
-	<div class="row"><div class="col-sm-5">
-</div><div class="text-center text-md-left"><center>
-                     <button type="button" class="btn btn-primary btn-lg">See All News</button></center>
-                </div>
-
+	<div class="row">
+		<div class="col-sm-5">
+		</div>
 	</div>
-  </div>
-	<div class="row"><div class="col-sm-5">
-</div></div>
 </div>
 
 {% endblock %}
