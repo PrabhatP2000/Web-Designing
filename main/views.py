@@ -41,6 +41,9 @@ def gallery(request):
 def te_result(request):
     return render(request,'te_result.html')
 
+def comp_department(request):
+    return render(request,'comp_dept.html')
+
 
 def result(request):
     if request.user.is_authenticated:
