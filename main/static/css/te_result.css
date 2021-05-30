@@ -48,3 +48,18 @@
     transition-duration: 1s;
     border-bottom: 2px solid black;
 }
+#welcomeamrut {
+    background-color: #139fbd;
+    background-image: linear-gradient(90deg, #139fbd 0%, #1d07c5 100%);
+    box-shadow: 16px 19px 23px -43px rgba(215, 225, 107, 0.54);
+    -webkit-box-shadow: 16px 19px 23px -43px rgba(215, 225, 107, 0.54);
+    -moz-box-shadow: 16px 19px 23px -43px rgba(215, 225, 107, 0.54);
+}
+
+#visionrow {
+    background-color: #139fbd;
+    background-image: linear-gradient(90deg, #139fbd 0%, #1d07c5 100%);
+    box-shadow: 16px 19px 23px -43px rgba(215, 225, 107, 0.54);
+    -webkit-box-shadow: 16px 19px 23px -43px rgba(215, 225, 107, 0.54);
+    -moz-box-shadow: 16px 19px 23px -43px rgba(215, 225, 107, 0.54);
+}
