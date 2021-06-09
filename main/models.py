@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 class ResultProfile(models.Model):
-    ERP = models.IntegerField()
+    ERP = models.CharField(max_length=7)
     SEM = models.IntegerField()
     SUBJECT_NAME1 = models.CharField(max_length=100)
     SUBJECT_NAME2 = models.CharField(max_length=100)
